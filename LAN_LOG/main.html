@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PeterHero2007的空间 - esp32</title>
+<style>
+@charset 'UTF-8';/*!
+ */:root{--animate-duration:1s;--animate-delay:1s;--animate-repeat:1}
+
+.animate__animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-duration:var(--animate-duration);animation-duration:var(--animate-duration);-webkit-animation-fill-mode:both;animation-fill-mode:both}
+
+.animate__bounceInDown{-webkit-animation-name:bounceInDown;animation-name:bounceInDown}@-webkit-keyframes bounceInLeft{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(-3000px,0,0) scaleX(3);transform:translate3d(-3000px,0,0) scaleX(3)}60%{opacity:1;-webkit-transform:translate3d(25px,0,0) scaleX(1);transform:translate3d(25px,0,0) scaleX(1)}75%{-webkit-transform:translate3d(-10px,0,0) scaleX(.98);transform:translate3d(-10px,0,0) scaleX(.98)}90%{-webkit-transform:translate3d(5px,0,0) scaleX(.995);transform:translate3d(5px,0,0) scaleX(.995)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes bounceInLeft{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(-3000px,0,0) scaleX(3);transform:translate3d(-3000px,0,0) scaleX(3)}60%{opacity:1;-webkit-transform:translate3d(25px,0,0) scaleX(1);transform:translate3d(25px,0,0) scaleX(1)}75%{-webkit-transform:translate3d(-10px,0,0) scaleX(.98);transform:translate3d(-10px,0,0) scaleX(.98)}90%{-webkit-transform:translate3d(5px,0,0) scaleX(.995);transform:translate3d(5px,0,0) scaleX(.995)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}
+
+.animate__bounceInLeft{-webkit-animation-name:bounceInLeft;animation-name:bounceInLeft}@-webkit-keyframes bounceInRight{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(3000px,0,0) scaleX(3);transform:translate3d(3000px,0,0) scaleX(3)}60%{opacity:1;-webkit-transform:translate3d(-25px,0,0) scaleX(1);transform:translate3d(-25px,0,0) scaleX(1)}75%{-webkit-transform:translate3d(10px,0,0) scaleX(.98);transform:translate3d(10px,0,0) scaleX(.98)}90%{-webkit-transform:translate3d(-5px,0,0) scaleX(.995);transform:translate3d(-5px,0,0) scaleX(.995)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes bounceInRight{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(3000px,0,0) scaleX(3);transform:translate3d(3000px,0,0) scaleX(3)}60%{opacity:1;-webkit-transform:translate3d(-25px,0,0) scaleX(1);transform:translate3d(-25px,0,0) scaleX(1)}75%{-webkit-transform:translate3d(10px,0,0) scaleX(.98);transform:translate3d(10px,0,0) scaleX(.98)}90%{-webkit-transform:translate3d(-5px,0,0) scaleX(.995);transform:translate3d(-5px,0,0) scaleX(.995)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}
+
+
+.animate__fadeInDownBig{-webkit-animation-name:fadeInDownBig;animation-name:fadeInDownBig}@-webkit-keyframes fadeInLeft{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInLeft{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}
+
+.animate__fadeInLeft{-webkit-animation-name:fadeInLeft;animation-name:fadeInLeft}@-webkit-keyframes fadeInLeftBig{0%{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInLeftBig{0%{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}
+
+.animate__fadeInLeftBig{-webkit-animation-name:fadeInLeftBig;animation-name:fadeInLeftBig}@-webkit-keyframes fadeInRight{0%{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInRight{0%{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}
+
+.animate__fadeInRight{-webkit-animation-name:fadeInRight;animation-name:fadeInRight}@-webkit-keyframes fadeInRightBig{0%{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInRightBig{0%{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}
+
+.animate__fadeInRightBig{-webkit-animation-name:fadeInRightBig;animation-name:fadeInRightBig}@-webkit-keyframes fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}
+
+.animate__fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp}@-webkit-keyframes fadeInUpBig{0%{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInUpBig{0%{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}
+
+.animate__fadeInUpBig{-webkit-animation-name:fadeInUpBig;animation-name:fadeInUpBig}@-webkit-keyframes fadeInTopLeft{0%{opacity:0;-webkit-transform:translate3d(-100%,-100%,0);transform:translate3d(-100%,-100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInTopLeft{0%{opacity:0;-webkit-transform:translate3d(-100%,-100%,0);transform:translate3d(-100%,-100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}
+
+.animate__fadeInTopLeft{-webkit-animation-name:fadeInTopLeft;animation-name:fadeInTopLeft}@-webkit-keyframes fadeInTopRight{0%{opacity:0;-webkit-transform:translate3d(100%,-100%,0);transform:translate3d(100%,-100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInTopRight{0%{opacity:0;-webkit-transform:translate3d(100%,-100%,0);transform:translate3d(100%,-100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}
+
+.animate__fadeInTopRight{-webkit-animation-name:fadeInTopRight;animation-name:fadeInTopRight}@-webkit-keyframes fadeInBottomLeft{0%{opacity:0;-webkit-transform:translate3d(-100%,100%,0);transform:translate3d(-100%,100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInBottomLeft{0%{opacity:0;-webkit-transform:translate3d(-100%,100%,0);transform:translate3d(-100%,100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}
+
+.animate__fadeInBottomLeft{-webkit-animation-name:fadeInBottomLeft;animation-name:fadeInBottomLeft}@-webkit-keyframes fadeInBottomRight{0%{opacity:0;-webkit-transform:translate3d(100%,100%,0);transform:translate3d(100%,100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInBottomRight{0%{opacity:0;-webkit-transform:translate3d(100%,100%,0);transform:translate3d(100%,100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.animate__fadeInBottomRight{-webkit-animation-name:fadeInBottomRight;animation-name:fadeInBottomRight}@-webkit-keyframes fadeOut{0%{opacity:1}to{opacity:0}}@keyframes fadeOut{0%{opacity:1}to{opacity:0}}
+
+.shadow {
+    box-shadow: 0 .2rem 1.25rem rgba(0, 0, 0, .07) !important
+}
+.card {
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #e7eaf3;
+    border-radius: .25rem;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    opacity:0.5
+}
+.bg{
+  background-image:url(/static/bg.jpg)
+}
+a{
+text-decoration: none;
+}
+</style>
+  </head>
+  <body style="padding:0;margin:0;">
+    <div class="bg" style="background-color:rgb(60, 120, 210);border=0px;height:140px;box-shadow: 0 .2rem 1.25rem rgba(0, 0, 0, .07) !important">
+      <div style="width:520px;padding:0;margin-left:80px;border:0;float:left">
+        <h1 style="color:#FFFFFF;font-family:Arial;padding:8px;margin:0;width:500px;border:0" class="animate__animated animate__bounceInLeft">Welcom - PeterHero2007</h1>
+        <p style="color:#FFFFFF;font-family:Arial;padding:8px;margin:0;float:top;width:500px"  class="animate__animated animate__bounceInLeft">欢迎来到PeterHero2007的主页</p>
+      </div>
+      <p style="color:#EEEEEE;font-family:Arial;padding:16px;margin-right:40px;float:right" class="animate__animated animate__fadeInRight">using esp32</p>
+    <div style="background-color:rgb(255,255,255);width:100%;height:1px;top:100px;position: absolute;margin-left:0"></div>
+    <div style="width:100%;padding:0;margin-left:80px;border:0;float:left;top:110px;position: absolute;" class="animate__animated animate__fadeInUp">
+<a style="color:#FFFFFF" href="/">Home</a>
+<a style="color:#FFFFFF;margin-left:80px">About</a>
+    </div>
+    </div>
+
+
+
+    <div style="margin-left:80px;width:324px;float:left;margin-top:24px">
+      <p style="font-size:100;margin:0;margin-bottom:24px;font-family:Arial;color:#333333;text-align:center" class="animate__animated animate__fadeInBottomLeft">LAN</p>
+      <hr>
+      <div class="animate__animated animate__fadeInLeft shadow card;background-color:rgba(255,255,255,0.5)">
+      <p style="margin:8px;font-family:Arial;color:#333333" >SSID：Esp32LAN</p>
+      <p style="margin:8px;font-family:Arial;color:#333333">密码：aptx4869</p>
+      <p style="margin:8px;font-family:Arial;color:#333333">地址：192.168.4.1</p>
+      <p style="margin:8px;font-family:Arial;color:#777777">本局域网使用Arduino ESP32开发</p>
+      </div>
+      <hr>
+      <p style="margin:8px;font-size:12px;color:#333333" class="animate__animated animate__fadeInLeft">嗨</p>
+      <p style="margin:8px;font-size:12px;color:#333333" class="animate__animated animate__fadeInLeft">这是一个十分无聊的页面。</p>
+      <p style="margin:8px;font-size:12px;color:#333333" class="animate__animated animate__fadeInLeft">当然在没有网的情况下，它可能也没有那么无聊</p>
+      <p style="margin:8px;font-size:12px;color:#333333" class="animate__animated animate__fadeInLeft">如果你真的很无聊，读一读我的文章吧</p>
+    </div>
+    
+    <div style="background-color:rgba(154,154,154);float:left;width:1px;height:1024px;margin:16px;margin-top:24px;margin-left:24px;"></div>
+    <div class="animate__animated animate__fadeInUp shadow card" style="margin:16px;background-color:rgba(154,154,180,0.5)">
+      <h3  style="text-align:center">背后</h3>
+<p style="margin:8px">自小便怕黑，怕鬼，怕那黑暗中的未知。行至无光之处，总惧着背后似乎有什么东西，或是一张狰狞的面孔，或是几声凄厉的怪叫，或只是几丝无形的幻影。</p>
+<p style="margin:8px">我惧怕黑暗中的无依，瑟缩于那背后的冰凉。于是从来不敢一个人走夜路，若是再配上些竹林怪石等灵异传说中的元素，不禁要一步三回头，确保无可怖的怪物引得人心惊肉跳；于是我从来不敢听那些恐怖故事、都市传说，不敢一个人看恐怖电影、小说，否则便是彻夜灯明了；于是每当他人在分享着贩卖着那些恐怖中的刺激时，我总会捂耳大号，或是径直跑开。</p>
+<p style="margin:8px">他们便笑我，即使是女生，也说我胆子小，毕竟当一次听了个女生讲鬼故事，最后却是她把我送回家，转身却发现她突然藏匿消失，惊得拔腿就跑。但一直以来，却认为“胆怯”一词形容我是不太贴切的。若是碰上些冒险主题的，便会全然不顾，冲着去迎接，例如是游乐园里最快的过山车、最高的跳楼机，是老家白天山里鲜有人走的小径，是最陡峭崎岖的赛道。</p>
+<p style="margin:8px">我便纳闷且好奇，自己惧怕的到底是背后的何物。惧的或许是未知，或许是冷汗，但该不是向极限挑战时背后的单薄。面对自己的未知，我思考且探索着，却仍是防不住同学突然从背后大叫一声。故行至幽静处，仍忍不住要且行且回头。</p>
+<p style="margin:8px">我向他们称此为“确保自己的安全”，于是我缓缓走着，仅一回头，看过了从童年到少年，看过了从少年到青年，再回头时，却已是逐渐远去的月台股道，刻有家乡名称的站牌。坐在开往异乡求学的列车上，背后是故乡的每一方街巷与砖瓦，是故园里父亲种的每一株花木，而它们只是渐行渐远。虽只是百余里，但忧郁时，崩溃时，苦闷时，再没人可以递一杯无私的温暖。便只靠着墙壁，或靠着床板，想着背后靠着的是熟悉的景色，心方可织入梦境。</p>
+<p style="margin:8px">纵使是全新的环境，当同学们无意间发现我的“胆怯”，也像当年那样乐此不疲，屡试不爽。最惧怕的便是整理着手头东西，一转身，背后冒出来室友举着手电筒的鬼脸。每当他们谈论灵异话题时，恨不得自搬出去一个人住——但终是不敢的，一个人只会更怕了。</p>
+<p style="margin:8px">越长越大，听过看过的反而越多，“胆子”反而比儿时更小。在吓与被吓之间，在欢笑与惊叫之间，日子也从不曾停过的笔尖与记满笔记的书本前流过了，紧接着便是入校以来第一次所谓“正式的大考”。</p>
+<p style="margin:8px">按照常理，我不应该畏缩，我从来都对自己的实力怀有自信。可就在那最后的时日里，我却显得难安，甚至于是慌乱。守着总是作响的心，我总觉得自己背负着什么，总想着那些“若是怎样会怎样”的因果，再细想时，又发觉似乎什么也没有背负。</p>
+<p style="margin:8px">不停地想着，就连值日也差点忘记。那夜做完值日后已是很晚了，走廊上已是空无一人，只被穷冬的风与夜色清洗着。我孤身走在归寝路上，忽然觉着背后似乎有些东西，一转身，却只是灯光下的影子。那光影像是一团鬼火，在背后暗暗地燃烧烧着，发笑着，像是要笼罩我，像是要夺走我。
+<p style="margin:8px">我辨了许久，方辨出那影子只是自己。</p>
+<p style="margin:8px">那影子只是自己心里的影子，是心里为自己设下的影子。自始至终，我畏缩的只是背后那些虚无缥缈的幻影，是自己为自己捏造的一张紧绷的弦。多少次受其威慑，受其控制，以至于受人嘲笑。让恐惧绑架了我，却忘记惧怕的只是自己。</p>
+<p style="margin:8px">于是我将那弦剪断了，让那些暗影消逝在远古的传说里，让那些无源的恐惧消逝在往事里，只知道自己原来什么也没有背负。</p>
+<p style="margin:8px">而我终将不息奔跑，只待朝阳升起，濯净我面庞，照亮我背后从未看清过的天地。</p>
+
+    </div>
+  </body>
+</html>
